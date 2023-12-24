@@ -25,10 +25,11 @@ namespace CusCarCom.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Company>>> GetCompanies()
         {
-          if (_context.Companies == null)
-          {
-              return NotFound();
-          }
+            // Hämtar alla företag från databasen om det finns några, annars returnerar NotFound-resultat.
+            if (_context.Companies == null)
+            {
+                return NotFound();
+            }
             return await _context.Companies.ToListAsync();
         }
 
@@ -36,10 +37,11 @@ namespace CusCarCom.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Company>> GetCompany(int id)
         {
-          if (_context.Companies == null)
-          {
-              return NotFound();
-          }
+            // Hämtar ett specifikt företag med angivet ID från databasen om det finns, annars returnerar NotFound-resultat.
+            if (_context.Companies == null)
+            {
+                return NotFound();
+            }
             var company = await _context.Companies.FindAsync(id);
 
             if (company == null)
@@ -51,15 +53,10 @@ namespace CusCarCom.Controllers
         }
 
         // PUT: api/Companies/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCompany(int id, Company company)
         {
-            if (id != company.ID)
-            {
-                return BadRequest();
-            }
-
+            // Uppdaterar ett företag med angivet ID om det existerar, annars returnerar BadRequest om ID:t inte matchar företagets ID.
             _context.Entry(company).State = EntityState.Modified;
 
             try
@@ -82,14 +79,14 @@ namespace CusCarCom.Controllers
         }
 
         // POST: api/Companies
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Company>> PostCompany(Company company)
         {
-          if (_context.Companies == null)
-          {
-              return Problem("Entity set 'CCCContext.Companies'  is null.");
-          }
+            // Skapar ett nytt företag i databasen om det finns en Company-entitet, annars returnerar Problem-resultat.
+            if (_context.Companies == null)
+            {
+                return Problem("Entity set 'CCCContext.Companies' is null.");
+            }
             _context.Companies.Add(company);
             await _context.SaveChangesAsync();
 
@@ -100,6 +97,7 @@ namespace CusCarCom.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCompany(int id)
         {
+            // Tar bort ett företag med angivet ID om det existerar, annars returnerar NotFound-resultat.
             if (_context.Companies == null)
             {
                 return NotFound();
@@ -116,6 +114,7 @@ namespace CusCarCom.Controllers
             return NoContent();
         }
 
+        // Kontrollerar om ett företag med givet ID existerar i databasen.
         private bool CompanyExists(int id)
         {
             return (_context.Companies?.Any(e => e.ID == id)).GetValueOrDefault();

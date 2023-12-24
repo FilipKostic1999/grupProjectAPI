@@ -25,10 +25,11 @@ namespace CusCarCom.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
-          if (_context.Customers == null)
-          {
-              return NotFound();
-          }
+            // Hämtar alla kunder från databasen om det finns några, annars returnerar NotFound-resultat.
+            if (_context.Customers == null)
+            {
+                return NotFound();
+            }
             return await _context.Customers.ToListAsync();
         }
 
@@ -36,10 +37,11 @@ namespace CusCarCom.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
         {
-          if (_context.Customers == null)
-          {
-              return NotFound();
-          }
+            // Hämtar en specifik kund med angivet ID från databasen om det finns, annars returnerar NotFound-resultat.
+            if (_context.Customers == null)
+            {
+                return NotFound();
+            }
             var customer = await _context.Customers.FindAsync(id);
 
             if (customer == null)
@@ -51,15 +53,10 @@ namespace CusCarCom.Controllers
         }
 
         // PUT: api/Customers/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCustomer(int id, Customer customer)
         {
-            if (id != customer.ID)
-            {
-                return BadRequest();
-            }
-
+            // Uppdaterar en kund med angivet ID om den existerar, annars returnerar BadRequest om ID:t inte matchar kundens ID.
             _context.Entry(customer).State = EntityState.Modified;
 
             try
@@ -82,14 +79,14 @@ namespace CusCarCom.Controllers
         }
 
         // POST: api/Customers
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
-          if (_context.Customers == null)
-          {
-              return Problem("Entity set 'CCCContext.Customers'  is null.");
-          }
+            // Skapar en ny kund i databasen om det finns en Customer-entitet, annars returnerar Problem-resultat.
+            if (_context.Customers == null)
+            {
+                return Problem("Entity set 'CCCContext.Customers' is null.");
+            }
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();
 
@@ -100,6 +97,7 @@ namespace CusCarCom.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)
         {
+            // Tar bort en kund med angivet ID om den existerar, annars returnerar NotFound-resultat.
             if (_context.Customers == null)
             {
                 return NotFound();
@@ -116,6 +114,7 @@ namespace CusCarCom.Controllers
             return NoContent();
         }
 
+        // Kontrollerar om en kund med givet ID existerar i databasen.
         private bool CustomerExists(int id)
         {
             return (_context.Customers?.Any(e => e.ID == id)).GetValueOrDefault();

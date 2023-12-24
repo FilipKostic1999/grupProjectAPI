@@ -9,73 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CusCarCom
 build_property.RootNamespace = CusCarCom
-build_property.ProjectDir = C:\Users\milan\Desktop\Filip\CusCarCom\
+build_property.ProjectDir = C:\Users\alexa\C#\grupProjectAPI\CusCarCom\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\milan\Desktop\Filip\CusCarCom
+build_property.MSBuildProjectDirectory = C:\Users\alexa\C#\grupProjectAPI\CusCarCom
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Cars/Create.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Cars/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Cars/Delete.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Cars/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Cars/Details.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Cars/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Cars/Edit.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Cars/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Cars/Index.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Cars/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Companies/Create.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Companies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFuaWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Companies/Delete.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Companies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFuaWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Companies/Details.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Companies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFuaWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Companies/Edit.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Companies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFuaWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Companies/Index.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Companies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFuaWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Customers/Create.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Customers/Delete.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Customers/Details.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Customers/Edit.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Customers/Index.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milan/Desktop/Filip/CusCarCom/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/alexa/C\#/grupProjectAPI/CusCarCom/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
