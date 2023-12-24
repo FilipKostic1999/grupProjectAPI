@@ -1,6 +1,4 @@
-# Projektets Namn
-
-Beskrivning av projektet här.
+# GroupProjectAPI
 
 ---
 
@@ -21,7 +19,9 @@ Beskrivning av projektet här.
 
 ## Beskrivning
 
-En kort beskrivning av projektet och dess syfte.
+Det här projektet är en ASP.NET Core-applikation strukturerad enligt MVC-arkitekturen (Model-View-Controller). 
+Det inkluderar modeller för bilar, kunder och företag med tillhörande vyer och kontroller för att hantera dessa dataobjekt. 
+Projektet använder Entity Framework Core för databasåtkomst och innehåller även SQL Server-instruktioner för migreringar och projektinstallation. 
 
 ---
 
