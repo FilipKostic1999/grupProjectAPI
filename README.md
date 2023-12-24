@@ -11,9 +11,6 @@
 - [Kontroller](#kontroller)
 - [Övrigt](#övrigt)
 - [SQL Server Setup](#sql-server-setup)
-- [Projektskapat och Verktygsinstallation](#projektskapat-och-verktygsinstallation)
-- [Kör och Bygg Projekt](#kör-och-bygg-projekt)
-- [Extensions för VS Code](#extensions-för-vs-code)
 
 ---
 
