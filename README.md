@@ -98,7 +98,7 @@ dotnet build
 
 ---
 
-## Extensions för VS Code För att underlätta utvecklingen i Visual Studio Code rekommenderas att installera följande extensions:
+## Extensions för VS Code För att underlätta utvecklingen i Visual Studio Code rekommenderas att installera följande extensions
 NuGet Package Manager
 C#
 SQL Server
