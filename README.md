@@ -82,7 +82,7 @@ Det här projektet är strukturerat enligt MVC (Model-View-Controller) i ASP.NET
 
 ### CCCContext.cs
 - En DbContext-klass för att skapa och hantera databasrelationer för modellerna.
-- 
+   
 ---
 
 ## Projektskapat och Verktygsinstallation För att skapa ett projekt och installera verktygen, använd följande kommandon
