@@ -82,9 +82,8 @@ Det här projektet är strukturerat enligt MVC (Model-View-Controller) i ASP.NET
 
 ### CCCContext.cs
 - En DbContext-klass för att skapa och hantera databasrelationer för modellerna.
-
+- 
 ---
-
 
 ## Projektskapat och Verktygsinstallation För att skapa ett projekt och installera verktygen, använd följande kommandon
 dotnet new webapi -minimal --name 
@@ -98,12 +97,11 @@ dotnet build
 
 ---
 
-## Extensions för VS Code För att underlätta utvecklingen i Visual Studio Code rekommenderas att installera följande extensions
+## Extensions för VS Code För att underlätta utvecklingen i Visual Studio Code rekommenderas att installera följande extensions:
 NuGet Package Manager
 C#
 SQL Server
 Live Share
-
 
 
 
