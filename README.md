@@ -98,9 +98,12 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 
 ---
 
-## För att skapa och applicera migreringar mot SQL Server används följande kommandon
-dotnet ef migrations add initial
-dotnet ef database update
+## För att skapa och applicera migreringar mot SQL Server används följande kommandon:
+
+**dotnet ef migrations add initial**
+
+**dotnet ef database update**
+
 
 ---
 
