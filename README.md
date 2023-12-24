@@ -86,22 +86,22 @@ Det här projektet är strukturerat enligt MVC (Model-View-Controller) i ASP.NET
 ---
 
 ## Projektskapat och Verktygsinstallation För att skapa ett projekt och installera verktygen, använd följande kommandon
-dotnet new webapi -minimal --name 
-dotnet tool install --global dotnet-ef
+dotnet new webapi -minimal --name, 
+dotnet tool install --global dotnet-ef.
 
 ---
 
 ## Kör och Bygg Projekt För att köra projektet
-dotnet run
-dotnet build
+dotnet run,
+dotnet build.
 
 ---
 
 ## Extensions för VS Code För att underlätta utvecklingen i Visual Studio Code rekommenderas att installera följande extensions:
-NuGet Package Manager
-C#
-SQL Server
-Live Share
+NuGet Package Manager,
+C#,
+SQL Server,
+Live Share.
 
 
 
