@@ -12,6 +12,10 @@ Beskrivning av projektet här.
 - [Vyer](#vyer)
 - [Kontroller](#kontroller)
 - [Övrigt](#övrigt)
+- [SQL Server Setup](#sql-server-setup)
+- [Projektskapat och Verktygsinstallation](#projektskapat-och-verktygsinstallation)
+- [Kör och Bygg Projekt](#kör-och-bygg-projekt)
+- [Extensions för VS Code](#extensions-för-vs-code)
 
 ---
 
@@ -52,12 +56,12 @@ Det här projektet är strukturerat enligt MVC (Model-View-Controller) i ASP.NET
 ## Vyer
 
 ### Car/Create.cshtml
-- En vy för att skapa en ny bil med formulärfält bundna till `Car`-modellen.
-- Använder ASP.NET Core tag-helpers och Razor-syntax för formuläret.
+- En vy för att skapa en ny bil med formulärfält som är bundna till `Car`-modellen.
+- Använder ASP.NET Core tag-helpers och Razor-syntax för att skapa formuläret.
 
 ### Customer/Index.cshtml
 - En vy som visar en lista över kunder.
-- Innehåller eventuellt ett HTML-table för kundinformation.
+- Kan innehålla ett HTML-table för att visa kundinformation.
 
 ### Company/Details.cshtml
 - En vy som visar detaljer om ett specifikt företag.
@@ -71,10 +75,10 @@ Det här projektet är strukturerat enligt MVC (Model-View-Controller) i ASP.NET
 - Innehåller HTTP-metoder för att hantera bilobjekt: skapa, visa, redigera, radera.
 
 ### CustomersController.cs
-- Metoder för att hantera kundobjekt: lista, visa detaljer, skapa, redigera, radera.
+- Innehåller metoder för att hantera kundobjekt: lista, visa detaljer, skapa, redigera, radera.
 
 ### CompaniesController.cs
-- Metoder för att hantera företagsobjekt: lista, visa detaljer, skapa, redigera, radera.
+- Har metoder för att hantera företagsobjekt: lista, visa detaljer, skapa, redigera, radera.
 
 ---
 
@@ -83,4 +87,46 @@ Det här projektet är strukturerat enligt MVC (Model-View-Controller) i ASP.NET
 ### CCCContext.cs
 - En DbContext-klass för att skapa och hantera databasrelationer för modellerna.
 
-Detta är en strukturerad översikt över projektet, inklusive dess struktur och de olika delarna som ingår.
+---
+
+## SQL Server Setup
+
+För att använda SQL Server som databas behöver följande paket och kommandon installeras:
+
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Design 
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+## För att skapa och applicera migreringar mot SQL Server används följande kommandon
+
+dotnet ef migrations add initial
+dotnet ef database update
+
+## För att ta bort migreringar används kommandot
+
+dotnet ef migrations remove
+
+## Projektskapat och Verktygsinstallation För att skapa ett projekt och installera verktygen, använd följande kommandon
+
+dotnet new webapi -minimal --name StudentPlatform.API
+dotnet tool install --global dotnet-ef
+
+## Kör och Bygg Projekt För att köra projektet
+
+dotnet run
+dotnet build
+
+## Extensions för VS Code För att underlätta utvecklingen i Visual Studio Code rekommenderas att installera följande extensions:
+
+NuGet Package Manager
+C#
+SQL Server
+Live Share
+
+
+Denna README.md inkluderar all information om projektets struktur, modeller, vyer, kontroller, övriga komponenter och instruktioner för att sätta upp SQL Server, migreringar, projekt skapande och körning, samt rekommenderade VS Code-extensions för en bättre utvecklingsmiljö. Du kan fylla i informationen med dina egna detaljer och specifikationer.
+
+
+
+
